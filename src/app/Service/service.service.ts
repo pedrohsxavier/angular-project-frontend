@@ -8,11 +8,9 @@ import { Usuario } from '../Model/Usuario';
 })
 export class ServiceService {
 
-  usuario: Usuario[];
-
   constructor(private http: HttpClient) { }
 
-  url='http://localhost:8080/projeto-CRUD/usuarios';
+  url='http://localhost:5432/clientes/tb_cliente';
 
   getUsuarios() {
     return this.http.get<Usuario[]>(this.url);

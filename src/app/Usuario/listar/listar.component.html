@@ -16,13 +16,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="text-center">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr *ngFor="let usuario of usuarios" class="text-center">
+            <td>{{ usuario.id }}</td>
+            <td>{{ usuario.nome }}</td>
+            <td>{{ usuario.email }}</td>
+            <td>{{ usuario.senha }}</td>
+            <td>{{ usuario.endereco }}</td>
+            <td>{{ usuario.dataNasc }}</td>
             <td>
               <button class="btn btn-warning">Editar</button>
               <button class="btn btn-danger" style="margin-left: 10px;">Deletar</button>
