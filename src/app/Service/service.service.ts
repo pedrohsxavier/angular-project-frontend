@@ -10,7 +10,7 @@ export class ServiceService {
 
   constructor(private http: HttpClient) { }
 
-  url='http://localhost:5432/clientes/tb_cliente';
+  url='http://localhost:8080/api/cliente';
 
   getUsuarios() {
     return this.http.get<Usuario[]>(this.url);
