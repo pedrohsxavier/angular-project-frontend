@@ -15,4 +15,8 @@ export class ServiceService {
   getUsuarios() {
     return this.http.get<Usuario[]>(this.url);
   }
+
+  adicionarUsuario(usuario: Usuario) {
+    return this.http.post<Usuario>(this.url, usuario);
+  }
 }

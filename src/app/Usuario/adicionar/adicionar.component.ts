@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { ServiceService } from './../../Service/service.service';
+import { Usuario } from 'src/app/Model/Usuario';
 
 @Component({
   selector: 'app-adicionar',
@@ -7,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdicionarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:ServiceService, private router:Router) { }
 
   ngOnInit() {
+  }
+
+  salvar(usuario: Usuario) {
+    this.service.adicionarUsuario(usuario)
+      .subscribe(data => {
+        alert("Cadastro realizado com sucesso!");
+        this.router.navigate(["listar"]);
+      });
+
   }
 
 }
