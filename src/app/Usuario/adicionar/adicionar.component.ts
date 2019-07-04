@@ -11,7 +11,7 @@ import { Usuario } from 'src/app/Model/Usuario';
 })
 export class AdicionarComponent implements OnInit {
 
-  constructor(private service:ServiceService, private router:Router) { }
+  constructor(private router:Router, private service:ServiceService) { }
 
   ngOnInit() {
   }
@@ -21,7 +21,7 @@ export class AdicionarComponent implements OnInit {
       .subscribe(data => {
         alert("Cadastro realizado com sucesso!");
         this.router.navigate(["listar"]);
-      });
+      })
 
   }
 

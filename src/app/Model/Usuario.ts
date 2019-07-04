@@ -4,6 +4,6 @@ export class Usuario {
   email: string;
   senha: string;
   endereco: string;
-  dataNasc: Date;
+  dataNascimento: Date;
   telefone: string;
 }

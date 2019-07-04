@@ -23,4 +23,9 @@ export class ListarComponent implements OnInit {
       })
   }
 
+  editar(usuario: Usuario): void {
+    localStorage.setItem("id", usuario.id.toString());
+    this.router.navigate(["editar"]);
+  }
+
 }

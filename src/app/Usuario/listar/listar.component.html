@@ -19,14 +19,14 @@
         <tbody>
           <tr *ngFor="let usuario of usuarios" class="text-center">
             <td>{{ usuario.id }}</td>
-            <td>{{ usuario.nome }}</td>
+            <td>{{ usuario.nome | uppercase }}</td>
             <td>{{ usuario.email }}</td>
             <td>{{ usuario.senha }}</td>
-            <td>{{ usuario.dataNasc }}</td>
+            <td>{{ usuario.dataNascimento | date:'dd/MM/yyyy' }}</td>
             <td>{{ usuario.endereco }}</td>
             <td>{{ usuario.telefone }}</td>
             <td>
-              <button class="btn btn-warning">Editar</button>
+              <button (click)="editar(usuario)" class="btn btn-warning">Editar</button>
               <button class="btn btn-danger" style="margin-left: 10px;">Deletar</button>
             </td>
           </tr>
