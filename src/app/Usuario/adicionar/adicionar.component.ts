@@ -16,8 +16,8 @@ export class AdicionarComponent implements OnInit {
   ngOnInit() {
   }
 
-  salvar(usuario: Usuario) {
-    this.service.adicionarUsuario(usuario)
+  adicionar(usuario: Usuario) {
+    this.service.createUsuario(usuario)
       .subscribe(data => {
         alert("Cadastro realizado com sucesso!");
         this.router.navigate(["listar"]);

@@ -20,10 +20,19 @@ export class EditarComponent implements OnInit {
   }
 
   editar() {
-    let id=localStorage.getItem("id");
-    this.service.getUsuarioById(+id)
+    const id = localStorage.getItem("id");
+    this.service.getUsuarioId(+id)
       .subscribe(data => {
         this.usuario = data;
+      });
+  }
+
+  atualizar(usuario: Usuario) {
+    this.service.updateUsuario(usuario)
+      .subscribe(data => {
+        this.usuario = data;
+        alert("Dados atualizados com sucesso!");
+        this.router.navigate(["listar"]);
       })
   }
 

@@ -25,7 +25,15 @@ export class ListarComponent implements OnInit {
 
   editar(usuario: Usuario): void {
     localStorage.setItem("id", usuario.id.toString());
-    this.router.navigate(["editar"]);
+    this.router.navigate(["editar"])
+  }
+
+  deletar(usuario: Usuario) {
+    this.service.deleteUsuario(usuario)
+      .subscribe(data => {
+        this.usuarios=this.usuarios.filter(c=>c!==usuario);
+        alert("Usuario excluído com sucesso!");
+      })
   }
 
 }

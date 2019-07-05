@@ -27,7 +27,7 @@
             <td>{{ usuario.telefone }}</td>
             <td>
               <button (click)="editar(usuario)" class="btn btn-warning">Editar</button>
-              <button class="btn btn-danger" style="margin-left: 10px;">Deletar</button>
+              <button (click)="deletar(usuario)" class="btn btn-danger" style="margin-left: 10px;">Deletar</button>
             </td>
           </tr>
         </tbody>
