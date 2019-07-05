@@ -32,7 +32,7 @@ export class ListarComponent implements OnInit {
     this.service.deleteUsuario(usuario)
       .subscribe(data => {
         this.usuarios=this.usuarios.filter(c=>c!==usuario);
-        alert("Usuario excluído com sucesso!");
+        alert("Usuário excluído com sucesso!");
       })
   }
 
