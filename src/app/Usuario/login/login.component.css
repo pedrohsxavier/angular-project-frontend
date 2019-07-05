@@ -18,7 +18,7 @@ button:hover {
 
 .card-header {
     text-align: center;
-    background-image: url(../assets/interlaced.png)
+    background-image: url(../../../assets/interlaced.png)
     
 }
 
@@ -30,4 +30,3 @@ form {
 form p {
     margin-top: 15px;
 }
-
