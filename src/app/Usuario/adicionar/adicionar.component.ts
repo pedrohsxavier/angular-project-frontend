@@ -11,6 +11,7 @@ import { Usuario } from 'src/app/Model/Usuario';
 })
 export class AdicionarComponent implements OnInit {
 
+  usuario: Usuario = new Usuario();
   constructor(private router:Router, private service:ServiceService) { }
 
   ngOnInit() {
