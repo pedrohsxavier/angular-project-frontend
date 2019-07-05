@@ -1,0 +1,8 @@
+.card {
+    width: 60%;
+}
+
+.card-header {
+    text-align: center;
+    background-color: rgb(241, 237, 237);
+}

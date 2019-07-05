@@ -23,7 +23,6 @@ export class AdicionarComponent implements OnInit {
         alert("Cadastro realizado com sucesso!");
         this.router.navigate(["listar"]);
       })
-
   }
 
 }

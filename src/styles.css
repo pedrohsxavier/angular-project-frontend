@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(233, 230, 230);
+}
+
+.card {
+    margin: 20px auto;
+    -webkit-box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.48);
+    box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.48);
+}
+
+h3 {
+    font-weight: 800;
+}
