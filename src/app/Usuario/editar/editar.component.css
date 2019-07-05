@@ -1,0 +1,8 @@
+button {
+    transition: .5s letter-spacing;
+    margin-top: 55px;
+}
+
+button:hover {
+    letter-spacing: 2px;
+}
