@@ -4,5 +4,10 @@
 
 .card-header {
     text-align: center;
-    background-color: rgb(241, 237, 237);
+    background-image: url(../assets/interlaced.png)
+    
+}
+
+.card-header img {
+    padding: 25px;
 }

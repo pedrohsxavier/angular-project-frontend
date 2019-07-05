@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    letter-spacing: 2px;
 }
 
 body {
-    background-color: rgb(233, 230, 230);
+    background-color: rgb(218, 218, 218);
 }
 
 .card {
@@ -12,6 +16,10 @@ body {
     -webkit-box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.48);
     -moz-box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.48);
     box-shadow: 6px 7px 8px 0px rgba(0,0,0,0.48);
+}
+
+.card-header {
+    background-color: rgba(214, 212, 212, 0.48)
 }
 
 h3 {
