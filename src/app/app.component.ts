@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'project-CRUD';
+  senha: string = '';
+  email: string = '';
+
 
   constructor(private router: Router) {}
 

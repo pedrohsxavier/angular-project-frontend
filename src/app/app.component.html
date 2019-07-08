@@ -2,14 +2,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <div class="card">
-        <div class="card-header">
-          <img src="http://conductor.com.br/assets/img/logo-conductor-connect.svg" alt="">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Projeto CRUD</h3>
-          <p class="card-text">Essa é uma aplicação web feita com Angular 8.</p>
-          <div class="btn-group">
+        <router-outlet></router-outlet>
+          <!-- <div class="btn-group">
             <button 
               (click)="listar()" 
               class="btn btn-primary">
@@ -20,14 +14,7 @@
               class="btn btn-success">
               Cadastrar
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>

@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header">
+    <img src="http://conductor.com.br/assets/img/logo-conductor-connect.svg" alt="">
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">Projeto CRUD</h3>
+    <p class="card-text">Essa é uma aplicação web feita com Angular 8.</p>
+    <form>
+      <div class="form-group">
+        <label for="email">Endereço de email</label>
+        <input type="email" class="form-control" id="email" name='email' placeholder="insira seu email"
+          [(ngModel)]="email" required>
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" class="form-control" id="senha" name='senha' placeholder="Senha" [(ngModel)]="senha"
+          required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" [disabled]="(senha && email) ? false : true"
+        (click)="listar()">
+        Enviar
+      </button>
+      <p>
+        Não é cadastrado? <a routerLink="adicionar">Clique aqui!</a>
+      </p>
+
+    </form>
